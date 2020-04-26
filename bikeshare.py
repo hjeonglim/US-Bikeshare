@@ -7,9 +7,9 @@ CITY_DATA = {'chicago': '/Users/heejeonglim/Downloads/bikeshare-2/chicago.csv',
              'washington': '/Users/heejeonglim/Downloads/bikeshare-2/washington.csv'}
 
 """
-    Asks user to specify a city, month, and day to analyze.
+    Ask user to specify a city, month, and day to analyze.
 
-    Returns:
+    Return:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
@@ -39,13 +39,13 @@ def get_filters():
 
 
 """
-    Loads data for the specified city and filters by month and day if applicable.
+    Load data for the specified city and filters by month and day if applicable.
 
     Args:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    Returns:
+    Return:
         df - Pandas DataFrame containing city data filtered by month and day
 """
 
@@ -78,7 +78,7 @@ def load_data(city, month, day):
     return df
 
 
-"""Displays statistics on the most frequent times of travel."""
+"""Display statistics on the most frequent times of travel."""
 
 
 def time_stats(df):
@@ -102,7 +102,7 @@ def time_stats(df):
     print('-' * 40)
 
 
-""" Displays statistics on the most popular stations and trip."""
+""" Display statistics on the most popular stations and trip."""
 
 
 def station_stats(df):
@@ -140,7 +140,7 @@ def convert(seconds):
     return f"{hour}:{minutes}:{seconds}"
 
 
-""" Displays statistics on the total and average trip duration. """
+""" Display statistics on the total and average trip duration. """
 
 
 def trip_duration_stats(df):
@@ -158,7 +158,7 @@ def trip_duration_stats(df):
     print(f"\nThe mean travel time is {a}")
 
 
-""" Displays statistics on bikeshare users"""
+""" Display statistics on bikeshare users"""
 
 
 def user_stats(df):
@@ -186,7 +186,7 @@ def user_stats(df):
         print("\nThere is no Birth Year column.")
 
 
-"""Displays 5 lines of raw data from the csv file for the selected city"""
+"""Display 5 lines of raw data from the csv file for the selected city"""
 
 def display_data(df):
     i = 0
@@ -219,4 +219,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
