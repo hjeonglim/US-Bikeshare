@@ -1,7 +1,7 @@
 # US-Bikeshare
 
-Use Python to understand U.S. bikeshare data
+This is a readme file for U.S. Bikeshare repo.
 
-* Use Pandas and Numpy
-* Help people understand the system usage in Chicago, New York and Washington D.C.
-* Include frequent use date and characteristics of users
+* Use Python Pandas and Numpy to understand U.S. Bikeshare data.
+* Compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
+* Include most frequent used stations, duration of trips and characteristics of users
